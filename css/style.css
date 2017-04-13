@@ -569,7 +569,7 @@ img {
 	}
 
 figure {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	position: relative;
 	display: block;
@@ -678,7 +678,7 @@ figcaption a:hover {
 	
 
 
-/*---------- Pane 3 Start --------*/
+/*---------- Pane 3 --------*/
 
 .panel-3{
 	background-color:#be914e;
@@ -741,6 +741,12 @@ figcaption a:hover {
         margin-bottom:0;
 	}
 
+}
+
+@media all and (max-width: 999px){
+	.skill{
+	     font-size:16px;
+	}
 }
 
 /*---------- footer --------*/
