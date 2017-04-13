@@ -155,7 +155,7 @@ body{
 	color:#fff; font-size:24px;
 	font-weight:300;
 	top:60%;
-	left:40%;
+	/*left:40%;*/
 	text-align:center;
 	text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
 	}
@@ -234,7 +234,7 @@ body{
     top: 45px;
 	left:20%
     } 
-.resume{ color:#be914e; font-size:14px;}
+.resume{font-size:14px;}
 
 }
 
@@ -670,77 +670,54 @@ figcaption a:hover {
 	min-height:800px; 
 	height:auto; 
 	background:#1d1d1d; 
-	position:relative; 
-	/*border-top:1px solid #fff;*/
+	position:relative;
 	background-image:url("../images/panel-bg.png");
 	background-repeat:repeat;
 	z-index:200;
 	}
 	
-/*.vertical_line1{
-	width: 1px; 
-	background-color: #fff; 
-	height: 24px; 
-	margin: 0 auto; 
-	position:relative; 
-	top:-12px; 
-	}*/
 
-/*---------- Panel 3 Start --------*/	
+
+/*---------- Pane 3 Start --------*/
+
 .panel-3{
-	font-family: gothic !important;
-	background-color:#be914e;  
-	min-height:320px; 
-	height:auto; 
-	overflow:auto;  
-	/*border-top: 1px solid #fff; */
+	background-color:#be914e;
+	min-height:320px;
+	height:auto;
+	overflow:auto;
 	padding-top:24px;
-	margin:auto 0; 
-	position:relative;
 	z-index:300;
 	}
 
-/*.vertical_line3{
-	width: 1px; 
-	background-color: #fff; 
-	height: 24px;  
-	margin: 0 auto; 
-   position:relative;
-   z-index:310; top:12px;
-	}*/
-	
-.skills{
-	width:90%;
-	display:block;
-	overflow:hidden;
-	max-width:1000px; 
-	color:#3b2a0a; 
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
-	font-weight:550; margin:0 auto; 
+.skill{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    color:#3b2a0a;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    font-weight:300;
+    margin-bottom:20px;
+    font-size:20px;
+    }
+
+.skill ul{
+    list-style-image:url("../images/list_style.PNG");
+    line-height:36px;
+}
+
+.col1{
+	flex: 1 39%;
 	}
-	
-.col1{ 
-	list-style-image:url("../images/list_style.PNG"); 
-	font-size:20px; 
-	line-height:36px; 
-	float:left; 
-	width:39% !important;
-	}
-	
+
 .col2{
-    float: left;
-    font-size: 20px;
-    line-height: 36px;
-    list-style-image: url("../images/list_style.PNG");
-	width:31% !important;
+	flex: 1 31%;
 	}
-	
+
 .col3{
-	list-style-image:url("../images/list_style.PNG"); 
-	font-size:20px; 
-	line-height:36px; 
-	float:left;  
-	width:30% !important;
+	flex: 1 30%;
 	}
 
 .col3 li, .col2 li, .col1 li{
@@ -748,91 +725,20 @@ figcaption a:hover {
 	}
 
 
+/* Media Queries  Pane3*/
 
-/* Media Queries  Panel 3*/
-
-@media all and (max-width: 300px){
-	
-	 .col1{
-	font-size:5px;  
-	line-height:30px;
+@media all and (max-width: 640px){
+	.skill{
+	     flex-direction: column;
+	     width:58%;
+	     margin:0 auto;
+	     margin-bottom:40px;
+	     font-size:16px;
 	}
-   
-   .col2{
-    font-size:5px; 
-    line-height:30px;
-	}
-	
-	.col3{
-	font-size:5px; 
-	line-height:30px;
-	}
-	
-	.col3 li, .col2 li, .col1 li{
-	padding-left:3px;
-	}
-	
-}
-@media all and (max-width: 679px){
-	
-	 .col1{
-	font-size:12px;  
-	line-height:30px; 
-	}
-   
-   .col2{
-    font-size:12px; 
-    line-height:30px;
-	}
-	
-	.col3{
-	font-size:12px; 
-	line-height:30px;
-	}
-	
-	.col3 li, .col2 li, .col1 li{
-	padding-left:3px;
-	}
-}
-
-
-@media all and (min-width: 680px){
- .col1{
-	font-size:16px;  
-	line-height:36px; 
-	}
-   
-   .col2{
-    font-size:16px;
-    line-height: 36px;
-	}
-	
-	.col3{
-	font-size:16px;
-	line-height:36px; 
-	}
-	
-   .col3 li, .col2 li, .col1 li{
-	padding-left:5px;
-	}
-
-}	
-
-
-@media all and (min-width: 1050px){
-	 .col1{
-	font-size:20px;  
-	line-height:36px; 
-	}
-   
-   .col2{
-    font-size:20px; 
-    line-height: 36px;
-	}
-	
-	.col3{
-	font-size:20px; 
-	line-height:36px; 
+	.col3, .col2, .col1{
+	    line-height:30px;
+        margin-top:0;
+        margin-bottom:0;
 	}
 
 }
@@ -852,16 +758,6 @@ figcaption a:hover {
 	z-index:400;
 	
 	}
-	
-/*.vertical_line4{
-	width: 1px; 
-	background-color: #fff; 
-	height: 24px;  
-	margin: 0 auto; 
-	position:relative; 
-	top:-12px;
-	
-	}*/
 
 .contact1{
 	height:35px; 
