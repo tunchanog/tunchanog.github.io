@@ -546,14 +546,20 @@ button + label{
   	.container .gap{
     width: 100%;
   	}
+
 }
 
-
+@media all and (max-width: 599px){
+.controls{
+      	 max-width:320px;
+      	 }
+}
 @media all and (min-width: 600px){
   	.container .mix,
   	.container .gap{
      width: 49%;
   	}
+
 }
 
 @media all and (min-width: 940px){
