@@ -15,6 +15,29 @@ body{
 	src:url(../font/GOTHIC_1.TTF);
 	}
 
+.title{
+	margin:0 auto;
+	min-width:50px;
+	width:auto;
+	max-width:150px;
+	padding:6px;
+	margin-top: 20px;
+	margin-bottom:20px;
+	}
+
+.title p{
+	min-width:50px;
+	width:auto;
+	max-width:150px;
+	border:1px solid #fff;
+	padding:5px 10px;
+	text-align:center;
+	color:#fff;
+	margin:0 auto;
+	font-family: gothic;
+	font-size:18px;
+	font-weight: 300;
+	}
 /*---------- Panel 1 --------*/	
 .panel-1{
 	width:100%; 
@@ -759,100 +782,56 @@ figcaption a:hover {
 
 .panel-4{
 	width:100%; 
-	min-height:270px; 
+	min-height:290px;
 	height:auto; 
-	background:#282724; 
-	/*border-top:1px solid #fff; */
+	background:#282724;
 	padding-bottom:0px; 
 	padding-top:0px;
 	margin:0 auto;
 	position:relative;
 	z-index:400;
-	
 	}
 
 .contact1{
-	height:35px; 
-	max-width:520px; 
-	margin:0 auto;
-	display:block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family:gothic;
+    font-weight: 300;
+    height: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom:15px;
+    font-size: 14px;
+    color: #fff;
 	}
+
+.mail_me, .call_me, .skype_me{
+    flex: 1 ;
+    background-position:left top;
+    background-repeat:no-repeat;
+    background-size:23px 23px;
+    padding-left:35px;
+    padding-top:2px;
+}
 	
 .mail_me{
-	float:left;
-	font-size:14px; 
-	color:#fff; 
-	min-width:150px; 
-	height:24px; 
-	margin-right:36px; 
-	font-family: gothic; 
-	font-weight: 300;
-	background-image:url("../images/mail.png"); 
-	background-position:left top; 
-	background-repeat:no-repeat; 
-	background-size:23px 23px; 
-	padding-left:35px; 
-	padding-top:2px;
+	min-width:270px;
+	background-image:url("../images/mail.png");
 	}
 	
 .call_me{
-	float:left;
-	font-size:14px; 
-	color:#fff; 
-	min-width:100px; 
-	height:24px;  
-	font-family: gothic; 
-	font-weight: 300;
-	background-image:url("../images/phone.png"); 
-	background-position:left top; 
-	background-repeat:no-repeat; 
-	background-size:23px 23px; 
-	padding-left:35px; 
-	padding-top:2px;
+	min-width:215px;
+	background-image:url("../images/phone.png");
 	}
 	
 .skype_me{
-	float:right;
-	font-size:14px; 
-	color:#fff; 
-	min-width:100px; 
-	height:24px;  
-	font-family: gothic; 
-	font-weight: 300;
-	background-image:url("../images/skype.png"); 
-	background-position:left top; 
-	background-repeat:no-repeat; 
-	background-size:23px 23px; 
-	padding-left:35px; 
-	padding-top:2px;
+	min-width:100px;
+	background-image:url("../images/skype.png");
 	}
 
-.title{
-	margin:0 auto;   
-	min-width:50px; 
-	width:auto; 
-	max-width:150px;  
-	padding:6px; 
-	margin-top: 20px; 
-	margin-bottom:20px;
-	}
-	
-.title p{
-	min-width:50px; 
-	width:auto; 
-	max-width:150px; 
-	border:1px solid #fff; 
-	padding:5px 10px; 
-	text-align:center; 
-	color:#fff; 
-	margin:0 auto; 
-	font-family: gothic; 
-	font-size:18px; 
-	font-weight: 300;
-	}
-	
-.line1{
-	width:520px; 
+.line{
+	width:600px;
 	height:2px; 
 	margin:0 auto; 
 	background-image:url("../images/line.jpg"); 			    
@@ -862,76 +841,55 @@ figcaption a:hover {
 	}
 	
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 	height:40px; 
 	width:130px; 
 	margin:0 auto;
 	}
+
+.fb, .pin, .in{
+    flex:1;
+    width:36px;
+	height:36px;
+	background-position:top center;
+    background-repeat:no-repeat;
+}
 	
 .fb{
-	float:right; 
-	width:36px; 
-	height:36px; 
-	background-image:url("../images/fb.png");     	    
-	background-position:top center; 
-	background-repeat:no-repeat;
+	background-image:url("../images/fb.png");
 	}
 	
 .pin{
-	float:left; 
-	width:36px; 
-	height:36px; 
-	margin-right:10px; 
-	background-image:url("../images/pin.png");    
-	background-position:top center; 
-	background-repeat:no-repeat;
+	background-image:url("../images/pin.png");
 	}
 	
 .in{
-	float:left; 
-	width:36px; 
-	height:36px;  
-	margin-right:10px;
-	background-image:url("../images/in.png");    
-	background-position:top center; 
-	background-repeat:no-repeat;
+	background-image:url("../images/in.png");
 	}
 	
 	/* Media Queries  Footer*/
 		
-@media all and (max-width: 600px){
+@media all and (max-width: 640px){
 	
-	.line1{
-	width: 90%;
+	.line{
+	    width: 90%;
 	}
 	
 	.contact1 {
-    height: 40px;
-    width: 90%;
-	 margin: 0 auto;
+	    flex-direction: column;
+        height: auto;
+        width: 45%;
+	    margin: 0 auto;
 	}
 	
-	.mail_me{
-	 background-size:18px 18px;
-	 margin-right:0px;
-	 font-size:11px;    
-	 padding-left:20px;
-	 width:43%;	    
+	.mail_me,.call_me,.skype_me{
+	    background-size:18px 18px;
+	    padding-left:50px;
+	    height:35px;
 	}
-	
-	.call_me{
-	 background-size:18px 18px; 
-	 font-size:11px;    
-	 padding-left:20px;
-	 width:30%;	 
-	}
-	
-	.skype_me{
-	  background-size:18px 18px; 
-	  font-size:11px;    
-	 padding-left:20px; 
-	 width:25%;	
-	}
-	
+
 }
 
 
