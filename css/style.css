@@ -695,11 +695,12 @@ figcaption a:hover {
     display: -ms-flexbox;
     display: flex;
 	height:40px; 
-	width:130px; 
+	width:200px; 
 	margin:0 auto;
 	}
+	.social a{outline: none;}
 
-.fb, .pin, .in{
+.fb, .pin, .in, .git{
     flex:1;
     width:36px;
 	height:36px;
@@ -717,6 +718,9 @@ figcaption a:hover {
 	
 .in{
 	background-image:url("../images/in.png");
+	}
+.git{
+	background-image:url("../images/git.png");
 	}
 	
 	/* Media Queries  Footer*/
