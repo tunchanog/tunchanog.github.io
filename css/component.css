@@ -355,7 +355,6 @@
 /* Media Queries */
 
 
-
 @media screen and (max-width: 640px) {
 	.morph-button-fixed,
 	.morph-button-fixed .morph-content {
@@ -423,7 +422,4 @@
 	}
 }
 
-
-
-
-
+.deatial_image{margin-top:20px !important;}
