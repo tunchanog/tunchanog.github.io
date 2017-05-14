@@ -134,13 +134,13 @@
 
 .content-style-overlay p  {
 	margin: 0 auto;
-	padding: 20px 0px 30px 0px;
+	padding: 10px 0px 30px 0px;
 	width:100%;
 	max-width: 780px;
 	text-align: justify;
 	font-size: 1em;
 	color:#fff;
-	line-height: 35px;
+	line-height: 24px !important;
 }
 
 .project-detail{
