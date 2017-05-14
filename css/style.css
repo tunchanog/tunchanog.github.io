@@ -4,15 +4,8 @@ body{
 	margin:0;
 	padding:0;
 	min-height:1500px;
+	font-family: 'Heebo', sans-serif;
 	}
-
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'gothic';
-	src:url('../fonts/gothic/GOTHIC_1.TTF');
-	}
-
 .title{
 	margin:0 auto;
 	min-width:50px;
@@ -32,7 +25,6 @@ body{
 	text-align:center;
 	color:#fff;
 	margin:0 auto;
-	font-family: gothic;
 	font-size:18px;
 	font-weight: 300;
 	}
@@ -47,7 +39,6 @@ body{
 	background:url("../images/bg2.jpg"); 
 	background-position:top center; 
 	background-repeat:no-repeat;
-	font-family: 'gothic';
 	color:#fff;
 	}
 
@@ -96,8 +87,7 @@ body{
     width: 243px;
 	}
 	
-.nav{
-	font-family:gothic;  
+.nav{ 
 	text-transform: uppercase; 
 	float:right; 
 	color:#fff;
@@ -226,11 +216,17 @@ body{
 	}
 
 .mydetail1 p{
+	width: 80%;
+    text-align: center;
+    margin: 0 auto;
     padding-top:20px;
-    font-size:14px;
+    font-size:20px;
     text-align:center;
-    line-height:22px;
+    line-height:30px;
+	font-weight: 300;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+	font-family: 'Heebo', sans-serif;
+	margin-bottom: 2%;
 	}
 
 
@@ -317,7 +313,6 @@ body{
 	}
 
 button{
-	font-family: 'gothic' !important; 
     background: #1d1d1d;
     display: inline-block;
     padding: .4em .8em;
@@ -339,7 +334,6 @@ button{
     width:80%;
     max-width:1000px;
     text-align:center;
-    font-family:gothic;
     text-transform:uppercase;
     }
   
@@ -542,7 +536,6 @@ figcaption a:hover {
 /*---------- Panel 2 --------*/
 
 .panel-2{
-	font-family: gothic !important;
 	width:100%; 
 	margin:0 auto; 
 	min-height:800px; 
@@ -645,7 +638,6 @@ figcaption a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-family:gothic;
     font-weight: 300;
     height: 24px;
     max-width: 600px;
