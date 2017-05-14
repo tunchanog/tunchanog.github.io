@@ -484,7 +484,6 @@ figcaption {
 	}
 
 figcaption h3 {
-	font-family:Verdana, Geneva, sans-serif;
 	font-weight:100;
 	font-size:24px;
 	color: #fff;
@@ -502,7 +501,6 @@ figcaption h3 {
 	}
 
 figcaption p {
-	font-family:Verdana, Geneva, sans-serif;
 	padding: 0px 0px;
 	margin-bottom: 0;
 	margin-top: 0%;
