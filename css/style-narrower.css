@@ -105,6 +105,10 @@ a.resume, section > .container > :last-child{
 	text-align: center;
 	}
 
+.avater-title {
+
+     margin-left: 0em; 
+	}
 /* Side Panel */
 
 #sidePanel{
