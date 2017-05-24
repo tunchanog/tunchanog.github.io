@@ -1,0 +1,26 @@
+/* General */
+
+body,input,textarea,select{
+	font-size: 17pt;
+	}
+	
+
+/* Header*/
+
+#header{
+	width: 0px;
+	}
+
+/* Footer */
+
+#footer{
+	margin-left: 0px;
+	}
+	
+
+/* Main */
+
+#main{
+	margin-left: 0px;
+	}
+
