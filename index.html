@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Tunchanog Powers | Portfolio</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -35,14 +34,12 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
-
 <body>
-
 	<!-- Header -->
-	<div id="header" class="skel-panels-fixed" style="  height: 350px; width: 100px; top:5%; left: -2px; ">
-		<div class="top" style=" height: 100%;">
+	<div id="header" class="skel-panels-fixed">
+		<div class="top">
 			<!-- Nav -->
-			<nav id="nav" style=" height: 100%;">
+			<nav id="nav">
 				<ul>
 					<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="profile"></span></a></li>
 					<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="portfolio">&nbsp;</span></a></li>
@@ -166,8 +163,9 @@
 			</div>
 		</div>
 	</div>
+	<!--*************************** End Page ***************************-->
 
-	<!--- Start item 1 -->
+	<!-- Start item 1 -->
 
 	<div id="CATSCenterPointOverlay" class="overlay overlay-simplegenie">
 		<button type="button" class="overlay-close">Close</button>
@@ -253,8 +251,8 @@
 			</div>
 		</div>
 	</div>
-	<!--- end item 1 -->
-	<!--- Start item 2 -->
+	<!-- end item 1 -->
+	<!-- Start item 2 -->
 
 	<div id="CATSMobilityOverlay" class="overlay overlay-simplegenie">
 		<button type="button" class="overlay-close">Close</button>
@@ -340,8 +338,8 @@
 			</div>
 		</div>
 	</div>
-	<!--- end item 2 -->
-	<!--- Start item 3 -->
+	<!-- end item 2 -->
+	<!-- Start item 3 -->
 
 	<div id="AlaskaOverlay" class="overlay overlay-simplegenie">
 		<button type="button" class="overlay-close">Close</button>
@@ -402,39 +400,39 @@
 			</div>
 		</div>
 	</div>
-	<!--- end item 3 -->
+	<!-- end item 3 -->
 
 </body>
 <script src="js/overlay.js"></script>
 <script>
-							  $(document).ready(function () {
-								  // if (Modernizr.touch) {
-								  // 	$(".close-overlay").removeClass("hidden");
-								  // 	$(".img").click(function (e) {
-								  // 		if (!$(this).hasClass("hover")) {
-								  // 			$(this).addClass("hover");
-								  // 		}
-								  // 	});
-								  // 	$(".close-overlay").click(function (e) {
-								  // 		e.preventDefault();
-								  // 		e.stopPropagation();x
-								  // 		if ($(this).closest(".img").hasClass("hover")) {
-								  // 			$(this).closest(".img").removeClass("hover");
-								  // 		}
-								  // 	});
-								  // } else {
-								  // 	$(".img").mouseenter(function () {
-								  // 		$(this).addClass("hover");
-								  // 	})
-								  // 		.mouseleave(function () {
-								  // 			$(this).removeClass("hover");
-								  // 		});
-								  // }
+	$(document).ready(function () {
+		// if (Modernizr.touch) {
+		// 	$(".close-overlay").removeClass("hidden");
+		// 	$(".img").click(function (e) {
+		// 		if (!$(this).hasClass("hover")) {
+		// 			$(this).addClass("hover");
+		// 		}
+		// 	});
+		// 	$(".close-overlay").click(function (e) {
+		// 		e.preventDefault();
+		// 		e.stopPropagation();x
+		// 		if ($(this).closest(".img").hasClass("hover")) {
+		// 			$(this).closest(".img").removeClass("hover");
+		// 		}
+		// 	});
+		// } else {
+		// 	$(".img").mouseenter(function () {
+		// 		$(this).addClass("hover");
+		// 	})
+		// 		.mouseleave(function () {
+		// 			$(this).removeClass("hover");
+		// 		});
+		// }
 
-								  CATSCenterPointOverlay = new Overlay(document.getElementById("CATSCenterPointOverlay"))
-								  CATSMobilityOverlay = new Overlay(document.getElementById("CATSMobilityOverlay"))
-								  AlaskaOverlay = new Overlay(document.getElementById("AlaskaOverlay"))
-							  });
+		CATSCenterPointOverlay = new Overlay(document.getElementById("CATSCenterPointOverlay"))
+		CATSMobilityOverlay = new Overlay(document.getElementById("CATSMobilityOverlay"))
+		AlaskaOverlay = new Overlay(document.getElementById("AlaskaOverlay"))
+	});
 
 </script>
 
