@@ -86,6 +86,12 @@ a{
 a:hover, a:link, a:visited, a:active{
 	color: #6e6d97;
 	}
+#footer a:hover, 
+#footer a:link, 
+#footer a:visited, 
+#footer a:active{
+	color: #fff;
+	}
 
 sub{
 	position: relative;
