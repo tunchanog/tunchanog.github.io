@@ -560,7 +560,7 @@ a.resume:hover {
 	top: 0;
 	left: 0;
 	background-color: #fff;;
-  	z-index: 20000;
+  	z-index: 19999;
   	overflow: hidden;
 }
 
@@ -578,7 +578,7 @@ a.resume:hover {
 	background: url(../images/cross.png) no-repeat center center;
 	color: transparent;
 	outline: none;
-	z-index: 20003;
+	z-index: 20003 !important;
 }
 
 .overlay-content {
@@ -589,7 +589,7 @@ a.resume:hover {
 	top: 0;
 	left: 0;
 	font-size: .8em;
-	z-index: 20002;
+	z-index: 20002 !important;
 }
 
 
