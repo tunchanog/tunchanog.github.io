@@ -134,3 +134,8 @@ a.resume, section > .container > :last-child{
 	text-align: left ;
 	}
 
+/* preloader */
+.mnml-spinner {
+	left:41% ;
+    }
+
