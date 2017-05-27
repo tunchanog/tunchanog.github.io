@@ -80,8 +80,9 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 
-function Overlay(overlay) {
+function Overlay(overlay, onLoad) {
 	this.overlay = overlay;
+  this.onLoad = onLoad;
 	var closeBttn = overlay.querySelector( 'button.overlay-close' );
 	var transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
@@ -122,5 +123,6 @@ function Overlay(overlay) {
 Overlay.prototype.open = function() {
     if( !classie.has( this.overlay, 'close' ) ) {
         classie.add( this.overlay, 'open' );
+        this.onLoad && this.onLoad();
     }
 }

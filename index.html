@@ -344,7 +344,7 @@
 					<img class="deatial_image" src="work/Cats_mobility/mobility1.jpg" />
 					<img class="deatial_image" src="work/Cats_mobility/Connection_Mock.jpg" />
 					<img class="deatial_image" src="work/Cats_mobility/Signin.jpg" />
-					<img class="deatial_image" src="work/Cats_mobility/Connection_Interaction.gif" />
+					<img id="cats-gif" class="deatial_image" />
 				</div>
 			</div>
 		</div>
@@ -570,6 +570,9 @@
 									 $(document).ready(function ($) {
 										 CATSCenterPointOverlay = new Overlay(document.getElementById("CATSCenterPointOverlay"))
 										 CATSMobilityOverlay = new Overlay(document.getElementById("CATSMobilityOverlay"))
+										 CATSMobilityOverlay.onLoad = function() {
+											 $("#cats-gif").attr("src", "work/Cats_mobility/Connection_Interaction.gif");
+										 }
 										 AlaskaOverlay = new Overlay(document.getElementById("AlaskaOverlay"))
 										 HBWOverlay = new Overlay(document.getElementById("HBWOverlay"))
 										 ArchaioOverlay = new Overlay(document.getElementById("ArchaioOverlay"))
