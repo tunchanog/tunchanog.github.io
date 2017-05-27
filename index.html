@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
 	<title>Tunchanog Powers | Portfolio | UI/UX Designer</title>
@@ -33,11 +34,14 @@
 		ga('create', 'UA-96369911-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 </head>
 
 <body>
+	<!-- Pre-loader -->
+	<div id="preloader" class="ex ex--light"><div class="mnml-spinner light mx-auto"></div></div>
 	<!-- Header -->
 	<div id="header" class="skel-panels-fixed">
 		<div class="top">
@@ -101,7 +105,7 @@
 							</header>
 						</article>
 						<article class="item" onclick="XmasOverlay.open();">
-						<img class="image full" src="work/Metro_xmas/pic01.jpg" alt="" />
+							<img class="image full" src="work/Metro_xmas/pic01.jpg" alt="" />
 							<header>
 								<h3>UI Design, HTML/CSS/jQuery</h3>
 							</header>
@@ -493,8 +497,7 @@
 					<div class="detail-row">
 						<div class="detail-title">Responsibility</div>
 						<div class="detail-content">
-							<p> Web / UI Design, Front End Dev, HTML/CSS/Jquery &nbsp; &nbsp; [ <a href="work/Metro_xmas/metro/home.html"
-								 target="_blank">View Demo</a> ]</p>
+							<p> Web / UI Design, Front End Dev, HTML/CSS/Jquery &nbsp; &nbsp; [ <a href="work/Metro_xmas/metro/home.html" target="_blank">View Demo</a>								]</p>
 						</div>
 					</div>
 				</div>
@@ -536,7 +539,7 @@
 					<div class="detail-row">
 						<div class="detail-title">Tools</div>
 						<div class="detail-content">
-							<p>Photoshop, Illustrator &nbsp; &nbsp;  [ <a href="work/Archaio/Archaio_full_view.html" target="_blank">View Design</a> ]</p>
+							<p>Photoshop, Illustrator &nbsp; &nbsp; [ <a href="work/Archaio/Archaio_full_view.html" target="_blank">View Design</a>								]</p>
 						</div>
 					</div>
 				</div>
@@ -564,7 +567,7 @@
 </body>
 <script src="js/overlay.js"></script>
 <script>
-									 $(document).ready(function () {
+									 $(document).ready(function ($) {
 										 CATSCenterPointOverlay = new Overlay(document.getElementById("CATSCenterPointOverlay"))
 										 CATSMobilityOverlay = new Overlay(document.getElementById("CATSMobilityOverlay"))
 										 AlaskaOverlay = new Overlay(document.getElementById("AlaskaOverlay"))
@@ -573,6 +576,9 @@
 										 XmasOverlay = new Overlay(document.getElementById("XmasOverlay"))
 									 });
 
-</script>
+									 $('body').imagesLoaded(function () {
+										 $('#preloader').fadeOut('slow', function () { $(this).remove(); });
+									 });
 
+</script>
 </html>
