@@ -1,6 +1,6 @@
 
 @charset 'UTF-8';
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('font/fontawesome-webfont.eot?v=3.2.1');
@@ -708,7 +708,7 @@ img.deatial_image {
     height: 5rem;
     width: 5rem;
 	margin: 0 auto;
-	top:42%;
+	top:40%;
 	left:48%;
 
     animation: basic 1s infinite linear;
@@ -718,7 +718,10 @@ img.deatial_image {
     border-color: rgba(255, 255, 255, 0.2);
     border-top-color: rgba(255, 255, 255, 1);
         }
-		
+/*.mnml-spinner.dark {
+    border-color: rgba(0, 0, 0, 0.2);
+    border-top-color: rgba(0, 0, 0, 1);
+    }*/
  @keyframes basic {
     0%   { transform: rotate(0); }
     100% { transform: rotate(359.9deg); }

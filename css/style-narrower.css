@@ -135,7 +135,5 @@ a.resume, section > .container > :last-child{
 	}
 
 /* preloader */
-.mnml-spinner {
-	left:41% ;
-    }
 
+#preloader{display:none;}
