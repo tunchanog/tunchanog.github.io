@@ -353,7 +353,10 @@ ol.default li{
 	color: #fff;
 	}
 	
-#nav{height: 100%; 	z-index: 19998;}
+
+.top{z-index:19988;}
+
+#nav{height: 100%; }
 
 /*#nav ul{}
 #nav ul li{}*/
