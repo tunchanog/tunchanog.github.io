@@ -112,17 +112,35 @@ function Overlay(overlay, onLoad) {
             else {
                 onEndTransitionFn();
             }
+            $('body').css('overflow', 'auto')
         }
     }
 
 	closeBttn.addEventListener( 'click', closeOverlay);
 }
 
+$.fn.redraw = function(){
+  $(this).each(function(){
+    var redraw = this.offsetHeight;
+  });
+};
+
+
+
+function forceCSSRecalc (node) {
+		var t = document.createElement('span');
+		t.style.cssText && 
+		(t.style.cssText = 'font-size: 0; width: 1px; height: 1px; position: absolute; left: -9999px;');
+		node.appendChild(t);
+		setTimeout(function() { node.removeChild(t); }, 50);
+	}
 
 
 Overlay.prototype.open = function() {
     if( !classie.has( this.overlay, 'close' ) ) {
+        $('body').css('overflow', 'hidden')
         classie.add( this.overlay, 'open' );
+        $($(this.overlay).find(".overlay-content")[0]).scrollTop(0);
         this.onLoad && this.onLoad();
     }
 }

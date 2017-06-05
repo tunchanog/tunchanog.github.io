@@ -323,6 +323,7 @@ ol.default li{
 	width: 100px !important;
 	top:5%; 
 	left:0px;
+	z-index: 9998;
 	}
 	
 #header .top{
@@ -354,7 +355,7 @@ ol.default li{
 	}
 	
 
-.top{z-index:19988;}
+
 
 #nav{height: 100%; }
 
@@ -538,6 +539,7 @@ a.resume:hover {
 
 #main{
 	margin-left: 0px;
+	z-index: 9997;
 	}
 	
 #main > section{
@@ -576,7 +578,7 @@ a.resume:hover {
 	top: 0;
 	left: 0;
 	background-color: #fff;;
-  	z-index: 19999;
+  	z-index: 9999;
   	overflow: hidden;
 }
 
@@ -600,30 +602,28 @@ a.resume:hover {
 .overlay-content {
 	position: fixed;
 	overflow: auto;
+	-webkit-overflow-scrolling: "touch";
 	right: 0;
 	bottom: 0;
 	top: 0;
 	left: 0;
 	font-size: .8em;
-	z-index: 20002 !important;
 }
 
 
 /* Effects */
 .overlay-simplegenie {
 	visibility: hidden;
-	-webkit-transform: translateY(60%) scale(0);
-	transform: translateY(60%) scale(0);
-	-webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
-	transition: transform 0.4s, visibility 0s 0.4s;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s, visibility 0s 0.4s;
+	transition: opacity 0.4s, visibility 0s 0.4s;
 }
 
 .overlay-simplegenie.open {
 	visibility: visible;
-	-webkit-transform: translateY(0%) scale(1);
-	transform: translateY(0%) scale(1);
-	-webkit-transition: -webkit-transform 0.4s;
-	transition: transform 0.4s;
+	opacity: 1;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
 }
 
 @media screen and (max-height: 30.5em) {
@@ -696,7 +696,7 @@ img.deatial_image {
 #preloader { 
 	position: fixed; 
 	left: 0; top: 0; 
-	z-index: 300000 !important; 
+	z-index: 99999;
 	width: 100%; 
 	height: 100%; 
 	overflow: visible; 
@@ -726,6 +726,5 @@ img.deatial_image {
     0%   { transform: rotate(0); }
     100% { transform: rotate(359.9deg); }
 }
-
 
 
