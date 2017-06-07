@@ -53,3 +53,27 @@ h2{
 .title {
     font-size: 1em;
 }
+.time{    
+	height: 90px;
+    width: 90px;
+	}
+
+.vertical-line {
+    margin: 20px 0px 10px 45px;
+}
+.time p:nth-child(2) {
+    line-height: 10px;
+}
+#timeline h4 {
+    font-size: 1.2em;
+	padding-top: .4em;
+}
+.job p{
+	margin-bottom: 0;
+    font-size: .8em;
+}
+.left-pane h3 {
+    margin-bottom: .8em;
+    text-align: center;
+    width: 96%;
+}
