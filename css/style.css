@@ -14,6 +14,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+/*
 @font-face {
 	font-family: 'Source Sans Pro';
 	src: url('font/SourceSansPro-Light.ttf');
@@ -21,7 +22,7 @@
 	font-style: normal;
 }
 
-/* Basic */
+Basic */
 
 body{
 	background: #fff;
@@ -92,6 +93,7 @@ a{
 
 a:hover, a:link, a:visited, a:active{
 	color: #6e6d97;
+	text-decoration: underline;
 	}
 #footer a:hover, 
 #footer a:link, 
@@ -319,13 +321,11 @@ ol.default li{
 #header{
 	position: fixed;
 	color: #fff;
-	background: #222729 url('images/overlay.png');
-	box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
-	text-align: right;
-	opacity: 0.85;
-	height: 350px; 
+	background: #0f0e3e;
+	opacity: 0.7;
+	height: 400px;
 	width: 100px !important;
-	top:5%; 
+	top:4%;
 	left:0px;
 	z-index: 9998;
 	}
@@ -359,16 +359,15 @@ ol.default li{
 	}
 	
 
-
-
 #nav{height: 100%; }
+
 
 /*#nav ul{}
 #nav ul li{}*/
 			
 #nav ul li a{
 	display: block;
-	padding: 1.1em .5em 0em .5em;
+	padding: .8em .5em 0em .5em;
 	color: rgba(255,255,255,0.5);
 	text-decoration: none;
 	outline: 0;
@@ -410,6 +409,19 @@ ol.default li{
 #nav ul li a.active span.profile{
 	background-image:url("../images/profile_active.png") ;
 	}
+
+#nav ul li a span.timeline {
+	width: 60px;
+	height: 60px;
+	background-image:url("../images/resume.png") ;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#nav ul li a.active span.timeline{
+	background-image:url("../images/resume_active.png") ;
+	}
+
 					
 #nav ul li a span.send {
 	width: 60px;
@@ -457,6 +469,7 @@ ol.default li{
 	background-position: center center;
 	}	
 
+/*
 a.resume{
 	background-color:#b9b9cb; 
 	color: #6e6d97;  
@@ -469,6 +482,7 @@ a.resume:hover {
 	background-color:#6e6d97; 
 	color: #fff;  
 	}
+	*/
 
 .name{
 	margin-top: -.15em;
@@ -487,9 +501,130 @@ a.resume:hover {
 	}
 
 #portfolio h2 span {
-    color: #666;
+    color: #969393;
 	font-weight: 400;
 	}
+
+
+
+/* ----- Resume ----- */
+
+#timeline h2 {
+    color: #a0a0b9;
+	font-size: 3em;
+    letter-spacing: -1px;
+	}
+
+#timeline h2 span {
+    color: #6e6d97;
+	font-weight: 400;
+	}
+
+#timeline h4{
+	font-size: 1.5em;
+	}
+
+#timeline .resume{
+    display:flex;
+	}
+
+.left-pane{
+	flex:1 60%;
+	}
+
+.left-pane h3 {
+	margin-bottom:.8em;
+	}
+
+.right-pane{
+	flex:1 40%;
+	padding:0em 0em 0em 1em;
+	}
+
+.resume h3 {
+	color: #4b4a6f;
+	margin-bottom:.2em;
+	}
+
+.left-pane h3 {
+	margin-bottom:.8em;
+	}
+
+.exp-item{
+	width:100%;
+	height:auto;
+	}
+
+.time{
+	width:100px;
+	height:100px;
+	line-height: 15px;
+	padding:2%;
+	text-align:center;
+	border-radius: 100px;
+	background-color: #cdcce0;
+	color:#565575;
+	float:left;
+	margin-right:5%;
+	font-size:.6em;
+    font-weight:400;
+	}
+
+.time p{
+	margin-bottom:0px;
+	}
+
+.job-title{
+	color:#6e6d97;
+	padding-top:.6%;
+	}
+
+.job p{
+	margin-bottom:0;
+	}
+
+.job p span{
+	font-size:.7em;
+	margin-left:1%;
+	}
+
+.education{
+	margin-bottom: 5%;
+	}
+
+h4.education-title{
+	color:#6e6d97;
+	font-size: 1.3em !important;
+	padding-top:0;
+	line-height: 1em;
+	}
+
+.education p{
+	margin-bottom:0;
+	font-size:1em;
+	}
+
+.education p:nth-child(1){
+	margin-bottom:0;
+	font-size: .7em;
+	color:#4b4a6f;
+	}
+
+.education p span{
+	font-size:.7em;
+	margin-left:1%;
+	}
+
+.time p:nth-child(2) {
+    line-height: 8px;
+}
+
+.vertical-line{
+	height:30px;
+	border-left:1px solid #bcbbce;
+	margin:20px 0px 10px 50px;;
+}
+
 
 /* Footer */
 
@@ -555,17 +690,15 @@ a.resume:hover {
 	
 #main > section.one{
 	background: #fff;
-	padding: 1.5em 0 3em 0;
 	}
 	
 #main > section.two{
 	background-color: #f2f2f2;
-	padding: 1.5em 0 3em 0;
 	}
 	
 #main > section.three{
-	background-color: #fff;
-	padding: 1.5em 0 3em 0;
+	background-color: #d7d7e2;
+	display:flex;
 	}
 	
 #main > section.four{
@@ -639,6 +772,7 @@ a.resume:hover {
 		min-height: 34px;
 	}
 }
+
 
 /* --- project content ---- */
 
