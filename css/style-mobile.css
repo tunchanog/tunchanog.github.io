@@ -78,7 +78,8 @@ h2{
     width: 96%;
 }
 
- a.DLresume{
-	width: 180px ;
-	margin-left:105px;
+  .DLresume{
+	width:100%;
+	text-align: center;
+	
 }
