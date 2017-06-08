@@ -469,20 +469,21 @@ ol.default li{
 	background-position: center center;
 	}	
 
-/*
+
 a.resume{
 	background-color:#b9b9cb; 
 	color: #6e6d97;  
 	padding:5px 24px; 
 	font-weight: 300; 
-	font-size:1.2em;
+	font-size:1em;
+	width: 185px;
 }
 
 a.resume:hover {
 	background-color:#6e6d97; 
 	color: #fff;  
 	}
-	*/
+	
 
 .name{
 	margin-top: -.15em;
