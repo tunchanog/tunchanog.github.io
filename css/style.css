@@ -718,6 +718,7 @@ h4.education-title{
 	background-color: #fff;;
   	z-index: 9999;
   	overflow: hidden;
+	display: none;
 }
 
 /* Overlay closing cross */

@@ -102,7 +102,7 @@ function Overlay(overlay, onLoad) {
             var onEndTransitionFn = function( ev ) {
                 if( support.transitions ) {
                     if( ev.propertyName !== 'visibility' ) return;
-                    this.removeEventListener( transEndEventName, onEndTransitionFn );
+                    self.removeEventListener( transEndEventName, onEndTransitionFn );
                 }
                 classie.remove( self.overlay, 'close' );
             };
@@ -113,6 +113,7 @@ function Overlay(overlay, onLoad) {
                 onEndTransitionFn();
             }
             $('body').css('overflow', 'auto')
+            $(self.overlay).css('display', 'none');
         }
     }
 
@@ -138,9 +139,15 @@ function forceCSSRecalc (node) {
 
 Overlay.prototype.open = function() {
     if( !classie.has( this.overlay, 'close' ) ) {
-        $('body').css('overflow', 'hidden')
-        classie.add( this.overlay, 'open' );
+        $('body').css('overflow', 'hidden');
+        $(this.overlay).css('display', 'block');
+        
         $($(this.overlay).find(".overlay-content")[0]).scrollTop(0);
-        this.onLoad && this.onLoad();
+        var self = this;
+        setTimeout(function() {
+          classie.add( self.overlay, 'open' );
+          self.onLoad && self.onLoad();
+        }, 1);
+        
     }
 }
