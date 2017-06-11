@@ -102,9 +102,10 @@ function Overlay(overlay, onLoad) {
             var onEndTransitionFn = function( ev ) {
                 if( support.transitions ) {
                     if( ev.propertyName !== 'visibility' ) return;
-                    self.removeEventListener( transEndEventName, onEndTransitionFn );
+                    this.removeEventListener( transEndEventName, onEndTransitionFn );
                 }
                 classie.remove( self.overlay, 'close' );
+                 $(overlay).css('display', 'none');
             };
             if( support.transitions ) {
                 overlay.addEventListener( transEndEventName, onEndTransitionFn );
@@ -113,7 +114,7 @@ function Overlay(overlay, onLoad) {
                 onEndTransitionFn();
             }
             $('body').css('overflow', 'auto')
-            $(self.overlay).css('display', 'none');
+           
         }
     }
 
