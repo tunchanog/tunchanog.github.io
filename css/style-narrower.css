@@ -1,34 +1,27 @@
 /* General */
-
 body,input,textarea,select{
 	font-size: 16pt;
-	}
-
-/*h2{
-	}*/
-
+}
 
 h2 br{
 	display: none;
-	}
+}
 
 .container{
 	padding: 0 2em 0 2em;
-	}
-
+}
 
 /* Header */
-
 #header{
 	position: relative;
 	width: 100%;
 	background: none !important;
 	box-shadow: none !important;
-	}
+}
 	
 #header .top{
 	position: relative;
-	}
+}
 	
 #header .bottom{
 	border-top: solid 1px rgba(255,255,255,0.05);
@@ -36,36 +29,25 @@ h2 br{
 	padding-top: 2em;
 	margin-top: 1em;
 	position: relative;
-	}
+}
 
 #logo{
 	margin: 1.5em 1.25em 1.25em 1.25em;
-	}
-
-/*#nav{
-	}
+}
 	
-#nav ul{
-	}
-		
-#nav ul li{
-	}*/
-			
 #nav ul li a{
 	padding: 1em 2em .5em 2.2em;
-	}
+}
 
 /* Footer */
-
 #footer{
 	margin-left: 0;
 	}
 
 /* Main */
-
 #main{
 	margin-left: 0;
-	}
+}
 
 .avatar-header{
 	display: -webkit-box;	
@@ -74,50 +56,47 @@ h2 br{
 	flex-direction:column;
 	text-align: center;
 	margin-right: 1em;
-	}
+}
 
 .name{
 	margin: 0em;
 	font-size: 1.5em;
 	margin-top: -0.1em;
-	}
+}
 
 .title{    
 	font-size: 1em;
-	}
+}
 
 .avatar{
 	margin: 0 auto;
-	}	
+}	
 
 .project-detail-container{
 	width: 90%;
-	}
+}
 
 .detail-row{
 	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 	flex-direction: column;
-	}
+}
    
 a.resume, section > .container > :last-child{
 	text-align: left;
-	}
+}
 
 .avater-title {
      margin-left: 0em; 
-	}
-/* Side Panel */
+}
 
+/* Side Panel */
 #sidePanel{
 	background: #0f0e3e;
 	opacity: 0.7;
-	}
+}
 
-/*#sidePanelToggle{
-	}*/
-	
 #sidePanelToggle .toggle{
 	position: absolute;
 	left: 0;
@@ -127,33 +106,32 @@ a.resume, section > .container > :last-child{
 	background: rgba(128,136,144,0.5) url('images/toggle.svg') center center no-repeat;
 	border-radius: 0.35em;
 	margin: 0.25em;
-	}
+}
 
 .mail{
 	text-align: left ;
-	}
+}
 
 /* preloader */
-
 #preloader{
 	display:none;
 }
 
 /* resume */
 #timeline .resume {
-    display: flex;
-    flex-direction: column;
     text-align:left;
 }
 
+.left-pane, .right-pane{
+	width: 100%;
+}
+
 .left-pane{
-    flex: 1 80%;
     margin-left: 3%;
     margin-bottom:2em;
 }
 
 .right-pane{
-    flex: 1 100%;
     margin-left: 0;
     padding-left:.5em;
 }

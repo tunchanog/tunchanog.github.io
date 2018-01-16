@@ -1,79 +1,73 @@
 /* General */
-
 body,input,textarea,select{
 	font-size: 16pt;
-	}
+}
 
 .container{
 	padding: 0 2em 0 2em;
-	}
+}
 
-/*h2{}*/
-	
 h2 br{
 	display: none;
-	}
-
-/* Lists */
-
-/*ul.icons{}	*/
-/*ul.icons li{}*/
+}
 
 ul.icons li a{
 	width: 1.75em;
-	}
+}
 
 /* Header */
-
 #header{
 	width: 20%;
-	}
-
-/*#logo{}*/
+}
 	
 #logo .image{
 	position: relative;
 	margin: 0 0 0.5em 0;
-	}
-
-/*#nav{}*/
-	
-/*#nav ul{}*/
-		
-/*#nav ul li{}*/
+}
 			
 #nav ul li a{
 	padding:.8em .5em 0em .4em;
-	}
+}
 				
 #nav ul li a span{
 	padding-right: 2.25em;
-	}
+}
 					
 #nav ul li a span:before{
 	left: 100%;
 	margin-left: -1.25em;
-	}
+}
 
 /* Footer */
-
  #main > section {	
 	 padding-left: 10% !important;
-	 }
+}
 
 #footer{
 	margin-left: 0;
 	padding-left: 10% !important;
-	}
+}
 
 /* Main */
-
 #main{
 	margin-left: 0;	
-	}
+}
 
 .mail{
 	text-align: left;
-	}
+}
 
+.left-pane, .right-pane{
+	width: 100%;
+}
 
+.left-pane{
+	margin-left: 3%;
+	margin-bottom:2em;
+}
+
+.right-pane{
+	margin-left: 0;
+	padding-left:.5em;
+}
+	
