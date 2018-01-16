@@ -76,13 +76,6 @@ h2 br{
 	width: 90%;
 }
 
-.detail-row{
-	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-	flex-direction: column;
-}
-   
 a.resume, section > .container > :last-child{
 	text-align: left;
 }
